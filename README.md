@@ -5,7 +5,7 @@ Docker image for PHP with roots.io Bedrock
 
 | Extension                               | Trellis                       | Docker php-fpm |
 |-----------------------------------------|-------------------------------|----------------|
-| WordPress recommended                   |                               |                |
+| **WordPress recommended**                   |                               |                |
 | curl                                    | ✅ (php-common)                | ✅ (built in)   |
 | dom                                     | ✅ (built in)                  | ✅ (built in)   |
 | exif                                    | ✅ (built in)                  | ❌              |
@@ -20,7 +20,7 @@ Docker image for PHP with roots.io Bedrock
 | imagick                                 | ❌                             | ❌              |
 | xml                                     | ✅ (php-common)                | ✅ (built in)   |
 | zip                                     | ✅ (php-common; php*-zip)      | ❌              |
-| WordPress fallback                      |                               |                |
+| **WordPress fallback**                      |                               |                |
 | filter                                  | ✅ (built in)                  | ✅ (built in)   |
 | gd                                      | ✅ (php-common; php*-gd)       | ❌              |
 | iconv                                   | ✅ (built in)                  | ✅ (built in)   |
@@ -28,11 +28,11 @@ Docker image for PHP with roots.io Bedrock
 | simplexml                               | ✅ (php-common; php*-xml)      | ✅ (built in)   |
 | xmlreader                               | ✅ (php-common; php*-xml)      | ✅ (built in)   |
 | zlib                                    | ✅ (built in)                  | ✅ (built in)   |
-| WordPress update/write themes/plugins   |                               |                |
+| **WordPress update/write themes/plugins**   |                               |                |
 | ssh2                                    | ❌                             | ❌              |
 | ftp                                     | ✅ (built in)                  | ✅ (built in)   |
 | sockets                                 | ✅ (built in)                  | ❌              |
-| Trellis additional/differing extensions |                               |                |
+| **Trellis additional/differing extensions** |                               |                |
 | mysql                                   | ✅ (php-common; php*-mysql)    | ❌              |
 | opcache                                 | ✅ (php-common; php*-opcache)  | ❌              |
 | dev                                     | ✅ (php*-dev)                   | ❌              |
