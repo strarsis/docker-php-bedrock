@@ -12,8 +12,6 @@ Instead a [WP CLI](https://hub.docker.com/_/wordpress?tab=tags&page=1&ordering=l
 
 ## PHP Extensions
 
-### PHP 7.x
-
 | Extension                                                                                                                                                                                  | [Trellis](https://github.com/roots/trellis) | [Docker PHP 7 FPM](https://hub.docker.com/_/php) | [Docker PHP 8 FPM](https://hub.docker.com/_/php) |  docker-php-bedrock (7)    |  docker-php-bedrock (8) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|--------------------------------------------------|--------------------------------------------------|----------------------------|-------------------------|
 | [**WordPress recommended**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions)                                                                       |                                             |                                                  |                                                  |                            |                         |
