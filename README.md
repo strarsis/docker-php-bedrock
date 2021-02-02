@@ -35,4 +35,4 @@ Docker image for PHP with roots.io Bedrock
 | Trellis additional/differing extensions |                               |                |
 | mysql                                   | ✅ (php-common; php*-mysql)    | ❌              |
 | opcache                                 | ✅ (php-common; php*-opcache)  | ❌              |
-| dev                                     | ✅(php*-dev)                   | ❌              |
+| dev                                     | ✅ (php*-dev)                   | ❌              |
