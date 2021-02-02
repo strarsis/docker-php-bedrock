@@ -1,6 +1,15 @@
 # docker-php-bedrock
 Docker image for PHP with roots.io [Bedrock](https://github.com/roots/bedrock) WordPress sites, attempting high parity with roots.io [Trellis](https://github.com/roots/trellis) PHP FPM.
 
+## Architecture
+
+### Compared to the WordPress Docker Hub image
+This image isn't derived from the [Docker Hub WordPress](https://hub.docker.com/_/wordpress) repository, as the WordPress core of Bedrock based sites is installed as a dependency using `composer`. The roots.io packaged WordPress core has also its default themes stripped (https://github.com/roots/bedrock/pull/555).
+
+### WP CLI
+The docker-php-bedrock image tries to contain only a sane runtime for WordPress Bedrock applications and no other tooling like WP CLI support or SSH access.
+Instead a [WP CLI](https://hub.docker.com/_/wordpress?tab=tags&page=1&ordering=last_updated&name=cli) container should be connected with and mounted into the container, so that it can access the WordPress configuration and site database for maintenance.
+
 ## PHP Extensions
 
 ### PHP 7.x
@@ -39,5 +48,5 @@ Docker image for PHP with roots.io [Bedrock](https://github.com/roots/bedrock) W
 | mysql                                   | ✅ (php*-common; php*-mysql)    | ❌              | ❌              |
 | opcache                                 | ✅ (php*-common; php*-opcache)  | ❌              | ✅ (docker-php-ext-install) |
 
-*<sub>1</sub>: SSH/FTP/Sockets remote access for WordPress to write theme/plugin files isn't needed for container usage, but is already built into the PHP Dockerhub image.
+*<sub>1</sub>: SSH/FTP/Sockets remote access for WordPress to write theme/plugin files isn't needed for container usage, but is already built into the PHP Docker Hub image.
 
