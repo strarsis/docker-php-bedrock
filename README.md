@@ -10,7 +10,7 @@ Docker image for PHP with roots.io Bedrock
 | [**WordPress recommended**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
 | curl                                    | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
 | dom                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
-| exif                                    | ✅ (built in)                   | ❌              | ✅ (built in)   |
+| exif                                    | ✅ (built in)                   | ❌              | ✅ (docker-php-ext-install) |
 | fileinfo                                | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | hash                                    | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | json                                    | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
