@@ -1,4 +1,4 @@
-FROM php:7.4.12-fpm
+FROM php:8.0.1-fpm
 
 
 # Permissions fix (important)
@@ -59,9 +59,11 @@ RUN \
                ghostscript \
              --no-install-recommends && \
 
-    # build and install using PECL (version 3.4.4)
-    pecl install -o -f imagick-3.4.4 && \
-    docker-php-ext-enable imagick && \
+    # build and install using workaround
+	# @see https://github.com/Imagick/imagick/issues/358#issuecomment-768586107
+    mkdir -p /usr/src/php/ext/imagick && \
+	curl -fsSL https://github.com/Imagick/imagick/archive/06116aa24b76edaf6b1693198f79e6c295eda8a9.tar.gz | tar xvz -C "/usr/src/php/ext/imagick" --strip 1 && \
+	docker-php-ext-install imagick && \
 
 
   # xml

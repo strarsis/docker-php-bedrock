@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+
+  php:
+    image: strarsis/php-bedrock:8.0.1-fpm
+    volumes:
+      - ../site:/srv/www
+      - /tmp:/tmp
+
+  nginx:
+    image: nginx:1.19.2
+    volumes:
+      - ../site:/srv/www
+      - ./nginx/config/app.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8080:80"
+
+  db:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: test
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db/data:/var/lib/mysql
+
+
