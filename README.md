@@ -3,7 +3,7 @@ Docker image for PHP with roots.io [Bedrock](https://github.com/roots/bedrock) W
 
 ## Architecture
 
-### Compared to the WordPress Docker Hub image
+### Comparison with the WordPress Docker Hub image
 This image isn't derived from the [Docker Hub WordPress](https://hub.docker.com/_/wordpress) repository, as the WordPress core of Bedrock based sites is installed as a dependency using `composer`. The roots.io packaged WordPress core has also its default themes stripped (https://github.com/roots/bedrock/pull/555).
 
 ### WP CLI
