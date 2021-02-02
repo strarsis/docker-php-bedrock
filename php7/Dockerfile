@@ -50,10 +50,10 @@ RUN \
   # imagick (+GhostScript for PDF support)
 
     # install build dependencies
-	apt-get update && \
+    apt-get update && \
     apt-get install -y \
                libmagickwand-dev \
-			   ghostscript \
+               ghostscript \
              --no-install-recommends && \
 
     # build and install using PECL (version 3.4.4)
@@ -73,7 +73,7 @@ RUN \
   # zip
 
     # install build dependencies
-	apt-get update && \
+    apt-get update && \
     apt-get install -y \
                libzip-dev \
              --no-install-recommends && \
@@ -98,7 +98,7 @@ RUN \
   # gd
 
     # install build dependencies
-	apt-get update && \
+    apt-get update && \
     apt-get install -y \
                libjpeg-dev \
                libpng-dev \
@@ -106,9 +106,9 @@ RUN \
                libfreetype6-dev \
              --no-install-recommends && \
 
-	# build and install using built-in docker script
+    # build and install using built-in docker script
     docker-php-ext-configure gd \
-			 --with-freetype --with-jpeg && \
+             --with-freetype --with-jpeg && \
     docker-php-ext-install -j$(nproc) gd && \
 
     # clean up build dependencies
@@ -126,12 +126,12 @@ RUN \
   # mcrypt
 
     # install build dependencies
-	apt-get update && \
+    apt-get update && \
     apt-get install -y \
                libmcrypt-dev \
              --no-install-recommends && \
 
-	# build and install using PECL (version 1.0.4)
+    # build and install using PECL (version 1.0.4)
     pecl install -o -f mcrypt-1.0.4 && \
     docker-php-ext-enable mcrypt && \
 
