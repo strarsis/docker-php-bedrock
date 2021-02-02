@@ -32,8 +32,11 @@ Docker image for PHP with roots.io Bedrock
 | zlib                                    | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | **WordPress update/write themes/plugins**   |                              |                |                   |
 | ssh2                                    | ❌                              | ❌              | ❌              |
-| ftp                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
+| ftp                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)*<sub>1</sub>   |
 | sockets                                 | ✅ (built in)                   | ❌              | ❌              |
 | **Trellis additional/differing extensions** |                              |                |                   |
 | mysql                                   | ✅ (php*-common; php*-mysql)    | ❌              | ❌              |
 | opcache                                 | ✅ (php*-common; php*-opcache)  | ❌              | ✅ (built in)   |
+
+*<sub>1</sub>: SSH/FTP/Sockets remote access for WordPress to write theme/plugin files isn't needed for container usage, but is already built into the PHP Dockerhub image.
+
