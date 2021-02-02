@@ -22,7 +22,7 @@ Docker image for PHP with roots.io Bedrock
 | imagick                                 | ❌                              | ❌              | ✅ (pecl)       |
 | imagick with GhostScript (for PDF)      | ❌                              | ❌              | ✅ (pecl)       |
 | xml                                     | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
-| zip                                     | ✅ (php*-common; php*-zip)      | ❌              | ✅ (pecl)       |
+| zip                                     | ✅ (php*-common; php*-zip)      | ❌              | ✅ (docker-php-ext-install) |
 | [**WordPress fallback**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions:~:text=modules%20WordPress%20may%20use) | | | |
 | filter                                  | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | gd                                      | ✅ (php*-common; php*-gd)       | ❌              | ✅ (docker-php-ext-install) |
