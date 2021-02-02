@@ -7,7 +7,7 @@ Docker image for PHP with roots.io Bedrock
 
 | Extension                               | [Trellis](https://github.com/roots/trellis) | [Docker php-fpm](https://hub.docker.com/_/php) | docker-php-bedrock |
 |-----------------------------------------|---------------------------------|----------------|-------------------|
-| **WordPress recommended**               |                                 |                  |                 |
+| [**WordPress recommended**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
 | curl                                    | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
 | dom                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | exif                                    | ✅ (built in)                   | ❌              | ✅ (built in)   |
@@ -23,7 +23,7 @@ Docker image for PHP with roots.io Bedrock
 | imagick with GraphicsMagick (for PDF)   | ❌                              | ❌              | ✅ (built in)   |
 | xml                                     | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
 | zip                                     | ✅ (php*-common; php*-zip)      | ❌              | ✅ (built in)   |
-| **WordPress fallback**                      |                              |                |                  |
+| [**WordPress fallback**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
 | filter                                  | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | gd                                      | ✅ (php*-common; php*-gd)       | ❌              | ✅ (built in)   |
 | iconv                                   | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
@@ -31,11 +31,11 @@ Docker image for PHP with roots.io Bedrock
 | simplexml                               | ✅ (php*-common; php*-xml)      | ✅ (built in)   | ✅ (built in)   |
 | xmlreader                               | ✅ (php*-common; php*-xml)      | ✅ (built in)   | ✅ (built in)   |
 | zlib                                    | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
-| **WordPress update/write themes/plugins**   |                              |                |                   |
+| [**WordPress update/write themes/plugins**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
 | ssh2                                    | ❌                              | ❌              | ❌              |
 | ftp                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)*<sub>1</sub>   |
 | sockets                                 | ✅ (built in)                   | ❌              | ❌              |
-| **Trellis additional/differing extensions** |                              |                |                   |
+| [**Trellis additional/differing extensions**](https://github.com/roots/trellis/blob/68e313ffc1a2c34badfcc22cda6a5aaba11ec2f9/roles/php/defaults/main.yml#L4) | | | |
 | mysql                                   | ✅ (php*-common; php*-mysql)    | ❌              | ❌              |
 | opcache                                 | ✅ (php*-common; php*-opcache)  | ❌              | ✅ (built in)   |
 
