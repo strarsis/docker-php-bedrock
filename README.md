@@ -3,7 +3,7 @@ Docker image for PHP with roots.io Bedrock
 
 ## PHP Extensions
 
-| Extension                               | Trellis                       | Docker php-fpm |
+| Extension                               | [Trellis](https://github.com/roots/trellis) | [Docker php-fpm](https://hub.docker.com/_/php) |
 |-----------------------------------------|-------------------------------|----------------|
 | **WordPress recommended**                   |                               |                |
 | curl                                    | ✅ (php*-common)                | ✅ (built in)   |
