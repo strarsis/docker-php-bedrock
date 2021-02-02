@@ -23,7 +23,7 @@ Docker image for PHP with roots.io Bedrock
 | imagick with GraphicsMagick (for PDF)   | ❌                              | ❌              | ✅ (built in)   |
 | xml                                     | ✅ (php*-common)                | ✅ (built in)   | ✅ (built in)   |
 | zip                                     | ✅ (php*-common; php*-zip)      | ❌              | ✅ (built in)   |
-| [**WordPress fallback**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
+| [**WordPress fallback**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions:~:text=modules%20WordPress%20may%20use) | | | |
 | filter                                  | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
 | gd                                      | ✅ (php*-common; php*-gd)       | ❌              | ✅ (built in)   |
 | iconv                                   | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
@@ -31,7 +31,7 @@ Docker image for PHP with roots.io Bedrock
 | simplexml                               | ✅ (php*-common; php*-xml)      | ✅ (built in)   | ✅ (built in)   |
 | xmlreader                               | ✅ (php*-common; php*-xml)      | ✅ (built in)   | ✅ (built in)   |
 | zlib                                    | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)   |
-| [**WordPress update/write themes/plugins**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions) | | | |
+| [**WordPress update/write themes/plugins**](https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions:~:text=extensions%20are%20used%20for%20file%20changes) | | | |
 | ssh2                                    | ❌                              | ❌              | ❌              |
 | ftp                                     | ✅ (built in)                   | ✅ (built in)   | ✅ (built in)*<sub>1</sub>   |
 | sockets                                 | ✅ (built in)                   | ❌              | ❌              |
