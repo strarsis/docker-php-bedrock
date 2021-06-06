@@ -15,7 +15,7 @@ This image isn't derived from the [Docker Hub WordPress](https://hub.docker.com/
 The docker-php-bedrock image tries to contain only a sane runtime for WordPress Bedrock applications and no other tooling like WP CLI support or SSH access.
 Instead a [WP CLI](https://hub.docker.com/_/wordpress?tab=tags&page=1&ordering=last_updated&name=cli) container should be connected with and mounted into the container, so that it can access the WordPress configuration and site database for maintenance.
 
-## PHP Extensions
+## PHP Extensions parity overview
 
 | Extension                                                                                                                                                                                  | [Trellis](https://github.com/roots/trellis) | [Docker PHP 7 FPM](https://hub.docker.com/_/php) | [Docker PHP 8 FPM](https://hub.docker.com/_/php) |  docker-php-bedrock (PHP 7 FPM)    |  docker-php-bedrock (PHP 8 FPM)    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|--------------------------------------------------|--------------------------------------------------|----------------------------|----------------------------|
