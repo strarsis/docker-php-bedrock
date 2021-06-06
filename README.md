@@ -2,8 +2,8 @@
 Docker image for PHP with roots.io [Bedrock](https://github.com/roots/bedrock) WordPress sites, attempting high parity with roots.io [Trellis](https://github.com/roots/trellis) PHP FPM.
 
 ## PHP releases
-There are two branches available:
-[PHP 7](https://github.com/strarsis/docker-php-bedrock/tree/php7)
+There are currently two branches available for the two major PHP versions:
+[PHP 7](https://github.com/strarsis/docker-php-bedrock/tree/php7) and 
 [PHP 8](https://github.com/strarsis/docker-php-bedrock/tree/php8)
 
 ## Architecture
