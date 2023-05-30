@@ -58,5 +58,6 @@ Instead a [WP CLI](https://hub.docker.com/_/wordpress?tab=tags&page=1&ordering=l
 
 
 *<sub>1</sub>: SSH/FTP/Sockets remote access for WordPress to write theme/plugin files isn't needed for container usage, but is already built into the PHP Docker Hub image.
+
 *<sub>2</sub>: [pickle](https://github.com/FriendsOfPHP/pickle) is a new PHP extensions installer, also supporting PHP 8. `pecl` has issues with PHP 8.x.
 
