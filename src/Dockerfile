@@ -1,4 +1,4 @@
-FROM php:8.2.25-fpm-bookworm
+FROM php:8.3.13-fpm-bookworm
 
 
 # Permissions fix (important)
