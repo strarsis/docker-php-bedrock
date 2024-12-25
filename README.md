@@ -5,6 +5,9 @@ Docker image for PHP with roots.io [Bedrock](https://github.com/roots/bedrock) W
 There are currently two branches available for the two major PHP versions:
 - [PHP 7.4](https://github.com/strarsis/docker-php-bedrock/tree/php7.4)
 - [PHP 8.0](https://github.com/strarsis/docker-php-bedrock/tree/php8.0)
+- [PHP 8.1](https://github.com/strarsis/docker-php-bedrock/tree/php8.1)
+- [PHP 8.2](https://github.com/strarsis/docker-php-bedrock/tree/php8.2)
+- [PHP 8.3](https://github.com/strarsis/docker-php-bedrock/tree/php8.3)
 
 ## Architecture
 
